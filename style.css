@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+main{
+height: 100vh;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8772fa9d;
+  color: white;
+  font-style: italic;
+  padding: 15px 15px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+nav li {
+  color: white;
+  padding: 10px 15px;            
+  border-radius: 5px;
+}
+.Explore {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blue;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+.containerSearch {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  
+}
+.contentSearch {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  text-align: center; 
+}
+.contentSearch button {
+  padding: 12px 30px;
+  background-color: #e0ba4f;
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  align-items: center;
+  
+  
+}
+.contentSearch label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.proximos-passeios{
+  display: flex;
+  padding: 40px 0;
+  font-style: italic;
+  color: blueviolet;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 2px solid blue;
+
+}
+.containerProximosPasseios{
+  border: 2px solid green;
+  width: 50%;
+  max-height: 100vh;
+}
+.separador {
+  height: 5px;
+  background-color: #e0ba4f;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+.descricao-viagem{
+  color: black;
+  font-style:initial ;
+}
+
+.botao-saiba-mais {
+  padding: 12px 30px;
+  background-color: #e0ba4f;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.containerCard{
+  width: 50%;
+}
+.containerCard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  align-items: center; 
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 25%;
+}
+.imagem img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card{
+  border-radius: 5px;
+  border: 2px solid orangered;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  gap: 50px;
+}

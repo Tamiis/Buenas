@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
+    <title>Buenas Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Buenas Viagens!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Passeios</a></li>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Avaliações</a></li>
+        </ul>
+    </header>
+    <section class="containerSearch">
+      <h1 class="Explore">EXPLORE O CEARÁ!</h1>
+      <div class="contentSearch">
+        <div class="search-field">
+          <label for="User">Para onde vamos?</label>
+          <input type="text" id="User" name="Name" placeholder="Digite seu destino">
+        </div>
+        <div class="search-field date-field">
+          <label for="Whe">Quando?</label>
+          <input type="date" id="When" name="When">
+        </div>
+        <div class="search-field date-field">
+          <label for="Retorn">Retorno</label>
+          <input type="date" id="Retorn" name="Retorn">
+        </div>
+        <button class="search-button">Buscar</button>
+      </div>
+    </section>
+  </main>
+  <section class="proximos-passeios">
+    <div class="containerProximosPasseios">
+      <h1 class="titulo-destaque">Próximas Passeios & Destinos</h1>
+      <div class="separador"></div>
+      <div class="descricao-viagem">
+        <p>Se você está em busca de cenários paradisíacos, o Ceará é o seu destino! Com praias que encantam pela beleza natural, águas cristalinas e dunas douradas, nosso litoral é um verdadeiro convite à aventura e ao relaxamento.
 
-  <body>
-    <main>
-        <header>
-            <h1>Buenas Viagens!</h1>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Passeios</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Avaliações</a></li>
-            </ul>
-        </nav>
+De Jericoacoara, com suas famosas dunas e pores do sol inesquecíveis, ao agito de Canoa Quebrada, cada canto do Ceará revela paisagens únicas e experiências inesquecíveis. Além disso, Fortaleza, a capital vibrante, oferece uma mistura perfeita de cultura, gastronomia e diversão.
 
-      <section class="containerSearch">
-        <h1>Explore o mundo!</h1>
-        <section class="contentSearch">
-          <label>Para onde vamos?<input type="text" id="User" name="Name"></label>
-          <label>Quando?<input type="date" id="When" name="When"></label>
-          <label>Retorno<input type="date" id="Retorn" name="Retorn"></label>
-          <button>Buscar</button>
-        </section>
-      </section>
-      <section class="destino">
-        <h2>Próximos passeios & destinos</h2>
-        <p>Para onde você quer viajar?</p>
+ Vem viver momentos inesquecíveis no Ceará. Explore, relaxe e se apaixone por nossas praias!</p>
+      </div>
+      <button class="botao-saiba-mais">Saiba mais</button>
+    </div>
+    <div class="containerCard">
+    <div class="card-grid">
+      <div class="card">
+        <p>Jericoacoara</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fguia.melhoresdestinos.com.br%2Fjericoacoara.html&psig=AOvVaw3GO3-D8RSjCF75ls_ynzyV&ust=1747503073104000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMif17HCqI0DFQAAAAAdAAAAABAE" alt="Jericoacoara">
+      </div>
+      <div class="card">
+        <P>Canoa Quebrada</P>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrasiltropical.com.br%2Fconheca-os-encantos-de-canoa-quebrada%2F&psig=AOvVaw1HB3h444d-UNiSPn7vjbEW&ust=1747503110366000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDP6sLCqI0DFQAAAAAdAAAAABAE" alt="Canoa Quebrada">
+      </div>
+      <div class="card">
+        <p>Fleicheiras</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffotografia.folha.uol.com.br%2Fgalerias%2F1750309322027850-flecheiras&psig=AOvVaw0qi3ibsFrUkO5U3MjrFgA5&ust=1747503161086000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiop-HCqI0DFQAAAAAdAAAAABAL" alt="Fleicheiras">
+      </div>
+      <div class="card">
+        <p>Icaraí de Amontada</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.melhoresdestinos.com.br%2Ficaraizinho-de-amontada-conheca-o-destino-secreto-mais-lindo-do-ceara.html&psig=AOvVaw0icu5p_V9OLvVglYmcbdqj&ust=1747503267285000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKifgJDDqI0DFQAAAAAdAAAAABAV" alt="Icaraí de Amontada">
+      </div>
+    </div>
+  </section>
+  
 
-        <div class="grid-destino">
-            <div class="car-destino">
-                <img src="https://www.google.com.br/url?sa=i&url=https%3A%2F%2Fwww.villeturismo.com.br%2Fsiteteste%2Fbarcelona%2F&psig=AOvVaw22BMT2j8KMpryQSm_bsy0-&ust=1746495183653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC7_-iXi40DFQAAAAAdAAAAABAJ" alt="Barcelona">
-
-            </div>
-            </div>
-        </section>
-      </section>
-    </main>
-
-
-
-  </body>
-
-</html>
+</body>
