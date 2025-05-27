@@ -1,54 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenas Viagens</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section:target {
+      padding-top: 100px;
+      margin-top: -100px;
+    }
+  </style>
+</head>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-
-  <body>
+<body>
+  <div class="page-wrapper">
     <main>
-        <header>
-            <h1>Buenas Viagens!</h1>
-        </header>
-        
+      <header>
+        <h1>Buenas Viagens!</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Passeios</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Avaliações</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#passeios">Passeios</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+          </ul>
         </nav>
-
+      </header>
+      
       <section class="containerSearch">
-        <h1>Explore o mundo!</h1>
-        <section class="contentSearch">
-          <label>Para onde vamos?<input type="text" id="User" name="Name"></label>
-          <label>Quando?<input type="date" id="When" name="When"></label>
-          <label>Retorno<input type="date" id="Retorn" name="Retorn"></label>
-          <button>Buscar</button>
-        </section>
-      </section>
-      <section class="destino">
-        <h2>Próximos passeios & destinos</h2>
-        <p>Para onde você quer viajar?</p>
-
-        <div class="grid-destino">
-            <div class="car-destino">
-                <img src="https://www.google.com.br/url?sa=i&url=https%3A%2F%2Fwww.villeturismo.com.br%2Fsiteteste%2Fbarcelona%2F&psig=AOvVaw22BMT2j8KMpryQSm_bsy0-&ust=1746495183653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC7_-iXi40DFQAAAAAdAAAAABAJ" alt="Barcelona">
-
+        <h1 class="Explore">EXPLORE O CEARÁ!</h1>
+        <div class="search-box">
+          <div class="search-form">
+            <div class="form-group">
+              <label>Para onde vamos?</label>
+              <input type="text" placeholder="Destino">
             </div>
+            <div class="form-group">
+              <label>Quando?</label>
+              <input type="text" placeholder="dd/mm/aaaa" class="date-input">
             </div>
-        </section>
+            <div class="form-group">
+              <label>Retorno</label>
+              <input type="text" placeholder="dd/mm/aaaa" class="date-input">
+            </div>
+            <button class="btn-search">Buscar</button>
+          </div>
+        </div>
       </section>
+      
+      <section id="passeios" class="proximos-passeios">
+        <div class="containerProximosPasseios">
+          <h1 class="titulo-destaque">Próximas Passeios & Destinos</h1>
+          <div class="separador"></div>
+          <div class="descricao-viagem">
+            <p>Se você está em busca de cenários paradisíacos, o Ceará é o seu destino! Com praias que encantam pela beleza
+              natural, águas cristalinas e dunas douradas, nosso litoral é um verdadeiro convite à aventura e ao relaxamento.
+
+              De Jericoacoara, com suas famosas dunas e pores do sol inesquecíveis, ao agito de Canoa Quebrada, cada canto do
+              Ceará revela paisagens únicas e experiências inesquecíveis. Além disso, Fortaleza, a capital vibrante, oferece
+              uma mistura perfeita de cultura, gastronomia e diversão.
+
+              Vem viver momentos inesquecíveis no Ceará. Explore, relaxe e se apaixone por nossas praias!</p>
+          </div>
+          <button class="botao-saiba-mais">Saiba mais</button>
+        </div>
+        <div class="containerCard">
+          <div class="containerCard-grid">
+            <div class="card">
+              <p>Jericoacoara</p>
+              <img src="./imagens/Jericoacoara.jpg" alt="Jericoacoara">
+            </div>
+            <div class="card">
+              <P>Canoa Quebrada</P>
+              <img src="./imagens/Canoa Quebrada.jpg" alt="Canoa Quebrada">
+            </div>
+            <div class="card">
+              <p>Fleicheiras</p>
+              <img src="./imagens/Flecheiras.jpeg" alt="Fleicheiras">
+            </div>
+            <div class="card">
+              <p>Icaraí de Amontada</p>
+              <img src="./imagens/Icaraí de Amontada.jpg" alt="Icaraí de Amontada">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="destinos" class="ParaOnde-Viajar">
+        <h1 class="Onde-Viajar"> Para onde você quer viajar?</h1>
+        <div class="destinations-grid">
+          <div class="destination-card">
+            <img src="./imagens/Lagoinha.jpg" alt="Lagoinha">
+            <div class="destination-info">
+              <h3>Laginha</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 4.400,00</span>
+                <span class="new-price">R$ 3.900,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="./imagens/Canoa Quebrada.jpg" alt="Canoa Quebrada">
+            <div class="destination-info">
+              <h3>Canoa Quebrada</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 4.200,00</span>
+                <span class="new-price">R$ 3.700,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="./imagens/Cumbuco.jpg" alt="Cumbuco">
+            <div class="destination-info">
+              <h3>Cumbuco</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 4.300,00</span>
+                <span class="new-price">R$ 3.500,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="./imagens/Flecheiras.jpeg" alt="Flecheiras">
+            <div class="destination-info">
+              <h3>Flecheiras</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 4.900,00</span>
+                <span class="new-price">R$ 4.200,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="./imagens/Icaraí de Amontada.jpg" alt="Icaraí de Amontada">
+            <div class="destination-info">
+              <h3>Icaraí de Amontada</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 4.300,00</span>
+                <span class="new-price">R$ 3.900,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="./imagens/Jericoacoara.jpg" alt="Jericoacoara">
+            <div class="destination-info">
+              <h3>Jericoacoara</h3>
+              <p>Pariatur autem harum ratione eveniet porro quidem distinctio, laudantium ducimus ipsam temporibus.</p>
+              <div class="price">
+                <span class="old-price">R$ 5.300,00</span>
+                <span class="new-price">R$ 4.500,00</span>
+              </div>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="avaliacoes" class="AvaliacoesClientes">
+        <h3 class="Avaliacoes_Clientes"> Avaliações dos Clientes </h3>
+        <div class="testimonial-carousel">
+          <div class="testimonial active">
+            <p class="testimonial-text">
+              "Acabei de voltar de uma viagem incrível organizada pela Buenas Viagens e precisei compartilhar minha experiência!
+              <br> 
+              Desde o primeiro contato,o atendimento foi impecável a equipe super atenciosa e profissional, que entendeu exatamente o que eu buscava."
+            </p>
+            <div class="testimonial-image">
+              <img src="./imagens/Patricia.jpg" alt="Cliente 1">
+            </div>
+            <p class="testimonial-name"><strong>Patrícia</strong>, Jornalista</p>
+          </div>
+
+          <button class="nav prev">&#10094;</button>
+          <button class="nav next">&#10095;</button>
+        </div>
+      </section>
+      
+      <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Buenas Viagens!</h3>
+            <p>Descubra as praias, cultura e aventuras do Ceará. Sua melhor viagem começa aqui!</p>
+          </div>
+          <div class="footer-section links">
+            <h3>NOSSOS PARCEIROS</h3>
+            consectetur adipisicing
+            Pariatur autem harum
+            distinctio laudantium ducimus
+            temporibus vel magnam
+            commodi sed quaerat
+            Quas perspiciatis blanditiis
+            aspernatur
+          </div>
+
+          <div class="footer-section contact">
+            <label for="email">ASSINE A NOSSA NEWSLETTER</label>
+            <input type="email" placeholder="Informe seu e-mail">
+            <button class="footer-button">Buscar</button>
+            <div class="separador_"></div>
+
+            <h6 class="Rede_sociais"> SIGA NOSSAS REDES SOCIAIS </h6>
+
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-
-
-
-  </body>
-
+  </div>
+</body>
 </html>
